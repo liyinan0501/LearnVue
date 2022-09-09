@@ -59,7 +59,7 @@
               type="text"
               class="form-control"
               placeholder="价格"
-              v-model="price"
+              v-model.number="price"
             />
           </div>
         </div>
