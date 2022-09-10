@@ -5,6 +5,7 @@
       使用场景：vue变量控制标签是否应该有类名
      -->
     <p :class="{ redStr: bool }">Dynamic ClassName</p>
+    <!-- <p :class="{ redStr: xx > 2 }">Dynamic ClassName</p> -->
     <!-- 
       :style="{css属性名: 值}"
       使用场景：
