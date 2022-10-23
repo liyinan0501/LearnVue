@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import emitter from '@/EventBus'
 export default {
   props: ['index', 'title', 'price', 'intro'],
   methods: {
@@ -18,9 +19,12 @@ export default {
     //   2. vue规定props 本身是只读的，不允许重新赋值
     //   this.price = this.price - 1
     // },
-
     // 2. this.$emit() - 主动触发事件
+    // subFn() {
+    //   this.$emit('subprice', this.index, 1)
+    // },
     subFn() {
+      emitter.emit('send', this.price)
       this.$emit('subprice', this.index, 1)
     },
   },
