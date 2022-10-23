@@ -13,15 +13,15 @@ export default {
     full: {
       // 给 full 赋值触发 set 方法
       set(val) {
-        console.log(val)
+        console.log(val);
       },
-      // 使用 full 值触发 get 方法
+      // 只要从 full 取值就触发 get 方法
       get() {
-        return 'None'
+        return "None";
       },
     },
   },
-}
+};
 </script>
 
 <style></style>
