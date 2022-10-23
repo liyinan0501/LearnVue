@@ -8,16 +8,17 @@
 export default {
   data() {
     return {
-      name: '',
-    }
+      name: "",
+    };
   },
-  // 监听 name 值的改变
+  // watch 主动监听 data/computed 变量值的变化。
+  // 监听 name 值的改变：
   watch: {
     name(newState, prevState) {
-      console.log(prevState, newState)
+      console.log(prevState, newState);
     },
   },
-}
+};
 </script>
 
 <style></style>
